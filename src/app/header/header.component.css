@@ -1,0 +1,38 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+  }
+  nav li {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    
+  }
+nav ul {
+    margin-left: auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+
+  @media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    nav li {
+        margin: 0;
+        padding: 10px;
+    }
+  
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+  }
