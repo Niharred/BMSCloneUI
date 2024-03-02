@@ -8,14 +8,23 @@
   <div></div>
 
   <form>
-    <input type="email" name="email" placeholder="EMAIL" id="email" />
+    <input
+      type="email"
+      name="email"
+      placeholder="EMAIL"
+      id="email"
+      [(ngModel)]="loginObj.email"
+    />
     <input
       type="password"
       name="password"
       placeholder="PASSWORD"
       id="password"
+      [(ngModel)]="loginObj.password"
     />
-    <button class="btn" id="login" type="button">Login</button>
+    <button class="btn" id="login" type="button" (click)="onLogin()">
+      Login
+    </button>
   </form>
   <p class="link">
     Don't have an account?<a href="">Sign up here</a>
