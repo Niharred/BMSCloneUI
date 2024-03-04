@@ -10,6 +10,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { FormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
 import { AdminComponent } from './admin/admin.component';
+import { CustomformComponent } from './customform/customform.component';
+import { CustomtableComponent } from './customtable/customtable.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AdminComponent } from './admin/admin.component';
     LoginComponent,
     ProfileComponent,
     SignupComponent,
-    AdminComponent
+    AdminComponent,
+    CustomformComponent,
+    CustomtableComponent
   ],
   imports: [
     BrowserModule,
